@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+/* My Online Profile
+    Author: Eric Morgan
+    Date completed: 3/11/21
+    Filename: responsiveStyles.css
+*/
+
+
+/* Mobile Stlyes */
+@media (max-width: 568px) {
+  .container {
+    margin-top: 0;
+  }
+
+  /* Stacks elements within this container on top of each other and centers them */
+  .infocontainer {
+    grid-template-areas:
+      "left"
+      "right";
+    justify-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  /* Profile picture 60% of original */
+  .profpic {
+    width: 60%;
+  }
+
+  .infocontainer h2 {
+    margin-top: 15px;
+  }
+
+  /* Stacks skillcontainer items on top of each other, items are centered */
+  .skillcontainer {
+    grid-template-areas:
+      "left"
+      "right"
+      "middle-left"
+      "middle-right"
+      "bottom-left"
+      "bottom-right";
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+  }
+
+  .skillcontainer p {
+    text-indent: 0;
+    margin: 5px;
+  }
+
+  /* Space between last element and footer */
+  .skillcol6 {
+    margin-bottom: 20px;
+  }
+
+  /* Items stacked on one another */
+  .aspirations {
+    grid-template-areas:
+      "left"
+      "right"
+      "bottom-left"
+      "bottom-right";
+  }
+
+  /* Centers images within aspiration grid */
+  .aspirations img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  footer {
+    font-size: 9pt;
+  }
+}
+
+/* Tablet Style */
+@media(max-width:850px) {
+/* Indent removed from skillcontainer ps */
+.skillcontainer p {
+  text-indent: 0;
+  }
+}

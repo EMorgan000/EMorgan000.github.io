@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+/* My Online Profile
+    Author: Eric Morgan
+    Date completed: 3/11/21
+    Filename: styles.css
+*/
+
+
+/* Main Styles */
+
+
+html {
+  min-height: 600px;
+}
+
+/* Light border around page; padding around all elements within container */
+.container {
+  font-family: 'Roboto Condensed', sans-serif;
+  border: 1px solid rgba(51, 51, 51, 0.3);
+  padding: 20px;
+  max-width: 1000px;
+}
+
+/* Profile header a is teal; no underline */
+.container .header a {
+  text-decoration: none;
+  color: var(--bs-teal);
+}
+
+.container nav a {
+  font-size: 1.7rem;
+}
+
+/* ps that make up blocks of text are indented */
+p {
+  text-indent: 2rem;
+}
+
+/* Removes indent from text within accordion on Portfolio Page */
+.accordion p {
+  text-indent: 0;
+}
+
+/* Top and bottom space around title header */
+.header {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Contact icons colored teal */
+.contact a {
+  color: var(--bs-teal);
+  padding: 5px;
+}
+
+/* Class used to center page elements */
+.center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Class used to align text left */
+.left {
+  text-align: left;
+}
+
+/* Home Page information */
+
+/* Two column grid */
+.infocontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left right";
+  margin-top: 20px;
+}
+
+.infocol1 {
+  grid-area: left;
+}
+
+.infocol2 {
+  grid-area: right;
+}
+/* End home page info */
+
+
+/* Resume Page */
+
+/* Underlined title on left side, information on the right, 6 columns */
+.skillcontainer {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-areas:
+    "left right"
+    "middle-left middle-right"
+    "bottom-left bottom-right";
+  margin-top: 20px;
+}
+
+.skil1col1 {
+  grid-area: left;
+}
+
+.skillcol2 {
+  grid-area: right;
+}
+
+.skillcol2 {
+  line-height: 2em;
+}
+
+.skillcol3 {
+  grid-area: middle-left;
+}
+
+.skillcol4 {
+  grid-area: middle-right;
+}
+
+.skillcol5 {
+  grid-area: bottom-left;
+}
+
+.skillcol6 {
+  grid-area: bottom-right;
+}
+/* End Resume Page */
+
+/* Aspirations Page */
+
+/* 4 column grid, text on the left, images on the right */
+.aspirations {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "left right"
+    "bottom-left bottom-right";
+  margin-top: 30px;
+}
+
+.asp1 {
+  grid-area: left;
+}
+
+.asp2 {
+  grid-area: right;
+}
+
+.asp3 {
+  grid-area: bottom-left;
+}
+
+.asp4 {
+  grid-area: bottom-right;
+}
+/* End Aspirations Page */
+
+/* Footer Section */
+
+/* Borders show on top and bottom around footer information */
+.footercontainer {
+  border: solid #ddd;
+  border-width: 0;
+}
+
+/* Footer icons colored teal */
+footer i {
+  color: var(--bs-teal);
+}
+
+footer {
+  font-size: 10pt;
+  margin: 10px;
+}
+/* End footer section */

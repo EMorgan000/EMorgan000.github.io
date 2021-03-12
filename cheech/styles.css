@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+/* Eric Morgan
+Cheech's pizza
+2/23/21
+filename: styles.css */
+
+/* Body Styles */
+/*  */
+/* Every element has box sizing set to border-box */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Condensed', Verdana, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Centers text for website banner */
+.header {
+  padding: 40px;
+  text-align: center;
+  background: tomato;
+  color: white;
+}
+
+/*Nav Styles*/
+
+/* Creates a responsive nav */
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+/* Each link has centered text */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* links turn white when hovered over */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*Form Styles*/
+
+/* Flex-container for form page */
+.row {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 10px;
+}
+
+/* Inputs are the largest form attribute, flexboxed, inset borders */
+.form-col input {
+  display: flex;
+  width: 50%;
+  height: 35px;
+  border-style: inset;
+  margin-top: 15px;
+  margin-left: 40px;
+}
+
+/* Second smallest attribute, no custo borser */
+.form-col select {
+  margin-top: 15px;
+  margin-left: 40px;
+  width: 20%;
+  height: 45px;
+}
+
+/* Submit button/Place order button colored red, smallest form attribute */
+.form-col .submit {
+  width: 20%;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 40px;
+  padding-left: 10px;
+  background-color: tomato;
+}
+
+/*Testimonial Styles*/
+
+/* Off-white bg color, grayish borders */
+.test-col {
+  border: 2px solid #ccc;
+  background-color: #eee;
+}
+
+/*Social Media Section*/
+p {
+  font-size: 13pt;
+}
+
+h3 {
+  font-size: 17pt;
+}
+
+/* Styles each social media button */
+.fa {
+  padding: 20px;
+  width: 50px;
+  text-decoration: none;
+  margin: 2px 2px;
+}
+
+/* SLightly transparent on hover */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/* Youtube */
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+/* Flex-container for pizza menu, wraps into rows and is aligned to the center of page */
+.flex-menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  justify-content: center;
+}
+
+/* Margin between each image */
+.flex-menu>div img {
+  margin: 15px;
+}
+
+/* Centered text within div element, extra space at the bottom for text */
+.flex-menu div {
+  text-align: center;
+  font-size: 12pt;
+  padding-bottom: 1.5em;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #333;
+  color: white;
+}
+
+/*Phone query screens with max of 568px*/
+@media screen and (max-width: 568px) {
+
+  /* Nav links stack on top of each other */
+  .navbar {
+    flex-direction: column;
+  }
+
+  /* Changes orientation of pizza images */
+  .row {
+    flex-direction: column;
+  }
+
+  /* Pizza images stack on one another */
+  .column {
+    flex-wrap: wrap;
+  }
+
+  /* Form inputs get 70% larger */
+  .form-col input {
+    width: 70%;
+  }
+
+  /* Form select boxes get 30% larger */
+  .form-col select {
+    width: 30%;
+  }
+
+  /* Place order button text pushed from left, button gets 25% larger */
+  .form-col .submit {
+    width: 25%;
+    padding-left: 5px;
+  }
+}

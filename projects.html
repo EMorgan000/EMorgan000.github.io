@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<!-- Online profile
+Author: Eric Morgan
+Date completed: 3/11/21
+filename: projects.html
+ -->
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio - Online Profile</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsiveStyles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/2bb29a080e.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="header display-4"><a href="index.html">Online Profile</a></h1>
+    <!-- Navigation -->
+    <!-- Nav collapses and toggle appears when viewport is < 992 pixels -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="resume.html">Resume</a>
+            <a class="nav-link" href="aspirations.html">Aspirations</a>
+            <a class="nav-link" href="projects.html">Portfolio</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Portfolio with completed projects -->
+    <!-- Projects within an accordion with a screenshot of the page and a button to visit the site -->
+    <!-- Page opens in another window -->
+    <div class="header center">
+      <h2>Completed Projects</h2>
+    </div>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne">
+            About Me - First Project
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <img class="img-fluid" src="images/aboutme.png" alt="" width="400">
+            <br/>
+            <p>After our first assignment out of the book, this was our first opportunity to demonstrate our newly learned skills.</p>
+            <a class="btn btn-primary" href="https://emorgan000.github.io/AboutMe/" target="_blank">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            About A Company
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <img class="img-fluid" src="images/company.jpg" alt="" width="400">
+            <p>This was our second project. It's all about a company that already exists, or one that we made up.</p>
+            <a class="btn btn-primary" href="https://emorgan000.github.io/MyCompany/" target="_blank">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Fitness Club
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <img class="img-fluid" src="images/fitness.png" alt="" width="400">
+            <br/>
+            <p>We were prompted to create a few pages advertsing a local gym. This assignment helped us to understand how to implement forms to collect user data, and tables to display information.</p>
+            <a class="btn btn-primary" href="https://emorgan000.github.io/FitforFun/" target="_blank">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Responsive Travel
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <img class="img-fluid" src="images/travel.jpg" alt="" width="400">
+            <br/>
+            <p>This site demonstrates responsive design through creating a mobile first website, and then, as the breakpoints accomodate the widing of the screen, more elements can be seen.</p>
+            <a class="btn btn-primary" href="https://emorgan000.github.io/ResponsiveTravel/" target="_blank">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Cheech's Flexible Pizza Parlor
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <img class="img-fluid" src="images/chpizza.jpg" alt="" width="400">
+            <br/>
+            <p>We were to design a website for a pizza restaurant including a form and a menu. This site helped us learn how to incorporate flexboxes into our toolkit. This page is made entirely out of flexboxes.</p>
+            <a class="btn btn-primary" href="cheech/order.html" target="_blank">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            Live Bait Website
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <img class="img-fluid" src="images/baitsite.jpg" alt="" width="400">
+            <p>A site advertising a bait shop in Ohio. This assignment let us utilize grids to include include in our toolkit to help position elements like blocks of text and pictures. We also learned how to include multimedia like audio and video
+              in our sites.</p>
+            <a class="btn btn-primary" href="https://emorgan000.github.io/LiveBaitSite/" target="_blank">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSeven">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            Bootstrap B&B
+          </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <img class="img-fluid" src="images/bootbnb.jpg" alt="" width="400">
+            <p>Our assigment was to create a website using Bootstrap. Using Bootstrap allows us to design a great looking site without having to work entirely from scratch.</p>
+            <a class="btn btn-primary" href="https://emorgan000.github.io/BootstrapBnB/" target="_blank">Visit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footercontainer center border-top border-bottom">
+      <footer>Site Created by Eric Morgan &copy; 2021 &nbsp; <i class="fas fa-envelope"></i> <a href="mailto:3asy3s@gmail.com">3asy3s@gmail.com</a> &nbsp; <i class="fas fa-phone"></i> <a href="tel:15735792960">573-579-2960</a> </footer>
+    </div>
+  </div>
+
+<!-- Bootsrap js file -->
+  <script src="bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
